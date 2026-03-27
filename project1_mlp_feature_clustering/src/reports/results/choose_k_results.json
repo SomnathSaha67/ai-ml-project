@@ -1,0 +1,65 @@
+[
+  {
+    "K": 2,
+    "Silhouette": 0.3433822406907781,
+    "Calinski-Harabasz": 267.6917158605383,
+    "Davies-Bouldin": 1.3205098372342037,
+    "Inertia": 11595.526607115786
+  },
+  {
+    "K": 3,
+    "Silhouette": 0.3143840098608098,
+    "Calinski-Harabasz": 197.11400022776706,
+    "Davies-Bouldin": 1.529388376780795,
+    "Inertia": 10061.797818243696
+  },
+  {
+    "K": 4,
+    "Silhouette": 0.1603193459664846,
+    "Calinski-Harabasz": 156.02368607480278,
+    "Davies-Bouldin": 1.8681946788883226,
+    "Inertia": 9335.805047695925
+  },
+  {
+    "K": 5,
+    "Silhouette": 0.14671455188004592,
+    "Calinski-Harabasz": 135.29605166507437,
+    "Davies-Bouldin": 1.7294749988679938,
+    "Inertia": 8711.199401856109
+  },
+  {
+    "K": 6,
+    "Silhouette": 0.12904883037059978,
+    "Calinski-Harabasz": 118.80918338131694,
+    "Davies-Bouldin": 1.7391198653827498,
+    "Inertia": 8305.988431032947
+  },
+  {
+    "K": 7,
+    "Silhouette": 0.13905516819924285,
+    "Calinski-Harabasz": 112.64185896115893,
+    "Davies-Bouldin": 1.6351808642148788,
+    "Inertia": 7749.99479606747
+  },
+  {
+    "K": 8,
+    "Silhouette": 0.14833357484588244,
+    "Calinski-Harabasz": 109.47899054584215,
+    "Davies-Bouldin": 1.5738325508001423,
+    "Inertia": 7214.561972175641
+  },
+  {
+    "K": 9,
+    "Silhouette": 0.14626407946728232,
+    "Calinski-Harabasz": 96.46783122396337,
+    "Davies-Bouldin": 1.46010527888062,
+    "Inertia": 7177.963401183495
+  },
+  {
+    "K": 10,
+    "Silhouette": 0.14202135455254952,
+    "Calinski-Harabasz": 91.51494108849067,
+    "Davies-Bouldin": 1.5417282899975644,
+    "Inertia": 6901.411912148421
+  }
+]
