@@ -1,43 +1,43 @@
 # Project 1: MLP Feature Clustering
 
-Train MLPs from scratch using NumPy, extract features with multiple techniques, and cluster data using K-Means.
+Author: Somnath Saha
 
-## Experiments
+## Overview
 
-### 1. MLP Training
-- **Breast Cancer Dataset**: Binary classification
-- **Iris Dataset**: Multiclass classification (3 classes)
-- Network: Configurable hidden layers with ReLU activation
-- Optimizer: Adam or SGD
-- Loss: Binary Cross-Entropy or Categorical Cross-Entropy
+In this project, I implemented a Multi-Layer Perceptron (MLP) from scratch using NumPy and compared it with scikit-learn baselines. I also explored feature extraction techniques and clustering on classic datasets. The project demonstrates my understanding of neural networks, unsupervised learning, and practical Python engineering.
 
-### 2. Feature Extraction
-- **PCA**: Principal Component Analysis for dimensionality reduction
-- **TF-IDF**: Text feature extraction (synthetic text examples)
-- **HOG**: Histogram of Oriented Gradients for image features
+## Highlights
 
-### 3. K-Means Clustering
-- Implementation from scratch using NumPy
-- K-means++ initialization
-- Validity indices:
-  - Silhouette Score (higher is better)
-  - Calinski-Harabasz Index (higher is better)
-  - Davies-Bouldin Index (lower is better)
-- Elbow method with inertia
+- Built and trained MLPs on the Breast Cancer and Iris datasets
+- Implemented feature extraction: PCA, TF-IDF (on synthetic text), and HOG (on images)
+- Developed K-Means clustering from scratch, including k-means++ initialization
+- Evaluated clustering with silhouette, Calinski-Harabasz, and Davies-Bouldin indices
+- Integrated an optional Weka bridge for extra feature engineering (skips gracefully if Weka is not installed)
+- All results and plots are saved to `reports/` and key screenshots are copied to `submission/`
 
-### 4. Weka Bridge
-- Optional CLI integration for Weka filters
-- Graceful fallback if Weka not installed
+## How to Run
 
-## Run Instructions
-
-### Run all experiments:
+Run all experiments and generate results:
 ```bash
 python -m project1_mlp_feature_clustering.src.p1.experiments.run_all --seed 42
 ```
 
-### Run tests:
+## Artifacts
+
+- Training curves, confusion matrices, ROC curves, and clustering visualizations in `reports/figures/`
+- Submission-ready screenshots in `submission/screenshots/project1/`
+- Metrics and results in `reports/results/`
+
+## Testing
+
+Run smoke tests:
 ```bash
+pytest project1_mlp_feature_clustering/tests/ -v
+```
+
+---
+
+This project was a great opportunity to deepen my understanding of both supervised and unsupervised learning, and to practice building ML pipelines from scratch.
 pytest project1_mlp_feature_clustering/tests/ -v
 ```
 

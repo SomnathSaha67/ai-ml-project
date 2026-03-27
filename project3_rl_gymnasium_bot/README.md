@@ -1,40 +1,44 @@
+
 # Project 3: RL Gymnasium Bot (DQN)
 
-This project implements a Deep Q-Network (DQN) agent for the CartPole-v1 environment using Gymnasium. All training, evaluation, and recording scripts are provided and save outputs for submission.
+Author: Somnath Saha
+
+## Overview
+
+In this project, I implemented a Deep Q-Network (DQN) agent to solve the CartPole-v1 environment using Gymnasium and PyTorch. The project covers the full RL pipeline from training to evaluation and evidence generation.
+
+## Highlights
+
+- Built a DQN agent with replay buffer, epsilon-greedy policy, and target network
+- Trained and evaluated the agent on CartPole-v1, saving checkpoints and reward curves
+- All results and plots are saved to `reports/` and key screenshots are copied to `submission/`
+- Optionally, the agent can record videos of its performance
 
 ## How to Run
 
-### Train
+Train the agent:
 ```bash
 python -m project3_rl_gymnasium_bot.src.p3.train --env CartPole-v1 --seed 42 --episodes 300
 ```
 
-### Evaluate
+Evaluate the agent:
 ```bash
 python -m project3_rl_gymnasium_bot.src.p3.eval --env CartPole-v1 --seed 42 --episodes 20 --checkpoint_path project3_rl_gymnasium_bot/data/checkpoints/dqn_cartpole.pt
 ```
 
-## Output Artifacts
-- Training/evaluation metrics and plots in `reports/figures/` and `reports/results/`
-- Submission screenshots and logs are auto-copied to `submission/` after each run
+## Artifacts
 
-## Pipeline
-1. **DQN Agent**: PyTorch-based, with replay buffer, epsilon-greedy, and target network
-2. **Training**: Reward curve, checkpoint, summary JSON
-3. **Evaluation**: Loads checkpoint, evaluates, saves summary
-4. **Recording**: Optionally records video to `data/videos/`
+- Reward curves, evaluation summaries, and (optionally) videos in `reports/figures/` and `data/videos/`
+- Submission-ready screenshots in `submission/screenshots/project3/`
+- Metrics and results in `reports/results/`
 
-## Key Files
-- `src/p3/train.py`: Training script
-- `src/p3/eval.py`: Evaluation script
-- `src/p3/record.py`: Video recording
-- `src/p3/agents/dqn.py`: DQN agent implementation
-- `src/p3/utils.py`: Utilities
+## Testing
 
-## Tests
+Run smoke tests:
 ```bash
 pytest project3_rl_gymnasium_bot/tests/ -v
 ```
 
-## Submission Evidence
-See `submission/screenshots/project3/` and `submission/logs/` for required PNGs and logs.
+---
+
+This project was a hands-on way to learn about reinforcement learning, deep learning, and reproducible experimentation in Python.

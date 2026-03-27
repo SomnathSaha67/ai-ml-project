@@ -1,40 +1,41 @@
+
 # Project 2: Aerial Image Clustering
 
-This project clusters aerial images using multiple algorithms and feature extraction techniques. It is fully automated and generates synthetic data if no raw images are present.
+Author: Somnath Saha
+
+## Overview
+
+In this project, I tackled the challenge of clustering aerial images using a variety of feature extraction and clustering algorithms. The pipeline is fully automated and generates synthetic aerial-like data if no raw images are present, ensuring reproducibility.
+
+## Highlights
+
+- Generated synthetic aerial image data for unsupervised clustering
+- Extracted features using pixel baselines, texture descriptors, and PCA
+- Compared KMeans, Gaussian Mixture, Agglomerative, and DBSCAN clustering
+- Evaluated results with silhouette, Calinski-Harabasz, and Davies-Bouldin indices
+- Visualized clusters using t-SNE and montage grids
+- All results and plots are saved to `reports/` and key screenshots are copied to `submission/`
 
 ## How to Run
 
+Run the full pipeline and generate results:
 ```bash
 python -m project2_aerial_image_clustering.src.p2.experiments.run_all --seed 42
 ```
 
-## Output Artifacts
+## Artifacts
 
-- All metrics and plots are saved in `reports/figures/` and `reports/results/`.
-- Submission screenshots and logs are auto-copied to `submission/` after each run.
+- Metrics tables, t-SNE plots, and cluster montages in `reports/figures/`
+- Submission-ready screenshots in `submission/screenshots/project2/`
+- Metrics and results in `reports/results/`
 
-## Pipeline
+## Testing
 
-1. **Data Handling**: Loads or generates synthetic aerial-like images.
-2. **Feature Extraction**: Baseline (pixels), texture features, PCA.
-3. **Clustering Algorithms**: KMeans, GMM, Agglomerative, DBSCAN.
-4. **Evaluation**: Silhouette, Calinski-Harabasz, Davies-Bouldin.
-5. **Visualization**: t-SNE plots, cluster montages, metrics table.
-
-## Key Files
-- `src/p2/experiments/run_all.py`: Main entrypoint.
-- `src/p2/datasets.py`: Data loading/generation.
-- `src/p2/features.py`: Feature extraction.
-- `src/p2/clusterers.py`: Clustering algorithms.
-- `src/p2/evaluation.py`: Metrics.
-- `src/p2/visualize.py`: Plots and montages.
-
-## Tests
-
+Run smoke tests:
 ```bash
 pytest project2_aerial_image_clustering/tests/ -v
 ```
 
-## Submission Evidence
+---
 
-See `submission/screenshots/project2/` and `submission/tables/` for required PNGs and CSVs.
+This project helped me practice unsupervised learning and computer vision, and to build robust, reproducible ML pipelines.
